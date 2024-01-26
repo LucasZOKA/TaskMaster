@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_group"
+            android:icon="@drawable/ic_m_groups"
+            android:title="Groups"/>
+
+        <item
+            android:id="@+id/nav_task"
+            android:icon="@drawable/ic_m_task"
+            android:title="Tarefas"/>
+
+        <item
+            android:id="@+id/nav_reward"
+            android:icon="@drawable/ic_m_reward"
+            android:title="Rewards"/>
+
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/ic_m_calendar"
+            android:title="Calendar"/>
+
+    </group>
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_m_logoff"
+                android:onClick="logoutDialog"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

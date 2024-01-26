@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/groupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grupo"
+            android:textColor="@color/text"
+            android:background="@color/background"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_20ssp"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_30sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Criado por:"
+                android:textSize="@dimen/_20sdp"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/groupCreator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="criador"
+                android:textColor="@color/text"
+                android:textSize="@dimen/_18sdp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Membros:"
+            android:textSize="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/groupMembers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="membros"
+            android:textColor="@color/text"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/btnGroupEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:text="editar"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskUpdateFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tarefa"
+            android:textSize="@dimen/_20ssp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/ed_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="titulo"
+            android:background="@color/background"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:padding="@dimen/_5sdp"
+            />
+        <EditText
+            android:id="@+id/ed_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="descricao"
+            android:background="@color/background"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grupo"
+                android:layout_marginEnd="@dimen/_32sdp"
+                android:layout_weight="0"
+                android:textSize="@dimen/_14ssp"/>
+
+            <Spinner
+                android:id="@+id/spin_Group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Imagem"
+                android:background="@color/background"
+                android:padding="@dimen/_5sdp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prioridade"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_weight="0"
+                android:textSize="@dimen/_14ssp"/>
+            <Spinner
+                android:id="@+id/spin_Priority"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/PRIORIDADES"
+                android:background="@color/background"
+                android:padding="@dimen/_5sdp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoria"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_weight="0"
+                android:textSize="@dimen/_14ssp"/>
+            <Spinner
+                android:id="@+id/spin_Category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/CATEGORIAS"
+                android:background="@color/background"
+                android:padding="@dimen/_5sdp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_dataEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data de conclusão"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_weight="0"
+                android:textSize="@dimen/_14ssp"/>
+
+            <EditText
+                android:id="@+id/ed_DateEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:hint="fim"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar"
+            android:layout_marginTop="@dimen/_50sdp"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excluir"
+            android:background="@color/transparente"
+            android:backgroundTint="@color/transparente"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/_30sdp"
+            android:paddingRight="@dimen/_30sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

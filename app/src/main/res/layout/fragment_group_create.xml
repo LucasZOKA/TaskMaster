@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupCreateFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grupo"
+            android:textSize="@dimen/_20ssp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/groupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:hint="Nome do grupo"
+            android:background="@color/background"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:text="Adicionar Membro"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/background">
+
+            <EditText
+                android:id="@+id/edMemberEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text"
+                android:hint="Email"
+                android:background="@color/background"
+                android:padding="@dimen/_5sdp"/>
+
+            <ImageButton
+                android:id="@+id/btnAddMember"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/ic_add"
+                android:background="@color/blue_800"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMemberList"
+            android:text="membros:"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/text"
+            />
+
+        <LinearLayout
+            android:id="@+id/llColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecione uma cor"
+                android:textSize="@dimen/_18sdp"/>
+
+            <ImageView
+                android:id="@+id/colorPicker_btn"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_15sdp"
+                android:background="@color/blue_800"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Criar"
+            android:id="@+id/btnUploadGroup"/>
+
+    </LinearLayout>
+
+</FrameLayout>

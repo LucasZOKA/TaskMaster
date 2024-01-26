@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "455715135423",
+    "firebase_url": "https://procrastibusters-default-rtdb.firebaseio.com",
+    "project_id": "procrastibusters",
+    "storage_bucket": "procrastibusters.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455715135423:android:c85dd472911410906f4b0a",
+        "android_client_info": {
+          "package_name": "com.lucaszoka.taskmaster_v2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455715135423-ver0gi4d5qn362inqhonl5ohgftihqid.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lucaszoka.taskmaster_v2",
+            "certificate_hash": "41fc35efdcb48eb8071cb646f17ed0d47bf7c8ba"
+          }
+        },
+        {
+          "client_id": "455715135423-385m3siqnd1l5im2sh50k6bf1hsvemtd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7XVvlryHO20LyKtJXf8Wc26ZdC_rk6e0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "455715135423-385m3siqnd1l5im2sh50k6bf1hsvemtd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

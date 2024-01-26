@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/nav_group">
+
+    <fragment
+        android:id="@+id/nav_group"
+        android:name="com.lucaszoka.taskmaster_v2.GroupListFragment"
+        android:label="GroupListFragment"
+        tools:layout="@layout/fragment_group_list">
+        <action
+            android:id="@+id/action_nav_group_to_groupCreateFragment"
+            app:destination="@id/groupCreateFragment" />
+        <action
+            android:id="@+id/action_nav_group_to_groupDetailFragment"
+            app:destination="@id/groupDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_reward"
+        android:name="com.lucaszoka.taskmaster_v2.RewardListFragment"
+        android:label="RewardListFragment"
+        tools:layout="@layout/fragment_reward_list">
+        <action
+            android:id="@+id/action_nav_reward_to_rewardCreateFragment"
+            app:destination="@id/rewardCreateFragment" />
+        <action
+            android:id="@+id/action_nav_reward_to_rewardDetailFragment"
+            app:destination="@id/rewardDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_task"
+        android:name="com.lucaszoka.taskmaster_v2.TaskListFragment"
+        android:label="RewardListFragment"
+        tools:layout="@layout/fragment_task_list">
+        <action
+            android:id="@+id/action_nav_task_to_taskCreateFragment"
+            app:destination="@id/taskCreateFragment" />
+        <action
+            android:id="@+id/action_nav_task_to_taskDetailFragment"
+            app:destination="@id/taskDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rewardCreateFragment"
+        android:name="com.lucaszoka.taskmaster_v2.RewardCreateFragment"
+        android:label="fragment_reward_create"
+        tools:layout="@layout/fragment_reward_create" >
+        <action
+            android:id="@+id/action_rewardCreateFragment_to_nav_reward"
+            app:destination="@id/nav_reward" />
+    </fragment>
+    <fragment
+        android:id="@+id/rewardDetailFragment"
+        android:name="com.lucaszoka.taskmaster_v2.RewardDetailFragment"
+        android:label="fragment_reward_detail"
+        tools:layout="@layout/fragment_reward_detail" >
+        <action
+            android:id="@+id/action_rewardDetailFragment_to_nav_reward"
+            app:destination="@id/nav_reward" />
+        <action
+            android:id="@+id/action_rewardDetailFragment_to_rewardUpdateFragment"
+            app:destination="@id/rewardUpdateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rewardUpdateFragment"
+        android:name="com.lucaszoka.taskmaster_v2.RewardUpdateFragment"
+        android:label="fragment_reward_update"
+        tools:layout="@layout/fragment_reward_update" >
+        <action
+            android:id="@+id/action_rewardUpdateFragment_to_rewardDetailFragment"
+            app:destination="@id/rewardDetailFragment" />
+        <action
+            android:id="@+id/action_rewardUpdateFragment_to_nav_reward"
+            app:destination="@id/nav_reward" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupCreateFragment"
+        android:name="com.lucaszoka.taskmaster_v2.GroupCreateFragment"
+        android:label="fragment_group_create"
+        tools:layout="@layout/fragment_group_create" >
+        <action
+            android:id="@+id/action_groupCreateFragment_to_nav_group"
+            app:destination="@id/nav_group" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupDetailFragment"
+        android:name="com.lucaszoka.taskmaster_v2.GroupDetailFragment"
+        android:label="fragment_group_detail"
+        tools:layout="@layout/fragment_group_detail" >
+        <action
+            android:id="@+id/action_groupDetailFragment_to_nav_group"
+            app:destination="@id/nav_group" />
+        <action
+            android:id="@+id/action_groupDetailFragment_to_groupUpdateFragment"
+            app:destination="@id/groupUpdateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupUpdateFragment"
+        android:name="com.lucaszoka.taskmaster_v2.GroupUpdateFragment"
+        android:label="fragment_group_update"
+        tools:layout="@layout/fragment_group_update" >
+        <action
+            android:id="@+id/action_groupUpdateFragment_to_groupDetailFragment"
+            app:destination="@id/groupDetailFragment" />
+        <action
+            android:id="@+id/action_groupUpdateFragment_to_nav_group"
+            app:destination="@id/nav_group" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskCreateFragment"
+        android:name="com.lucaszoka.taskmaster_v2.TaskCreateFragment"
+        android:label="fragment_task_create"
+        tools:layout="@layout/fragment_task_create" >
+        <action
+            android:id="@+id/action_taskCreateFragment_to_nav_task"
+            app:destination="@id/nav_task" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskUpdateFragment"
+        android:name="com.lucaszoka.taskmaster_v2.TaskUpdateFragment"
+        android:label="fragment_task_update"
+        tools:layout="@layout/fragment_task_update" >
+        <action
+            android:id="@+id/action_taskUpdateFragment_to_taskDetailFragment"
+            app:destination="@id/taskDetailFragment" />
+        <action
+            android:id="@+id/action_taskUpdateFragment_to_nav_task2"
+            app:destination="@id/nav_task" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskDetailFragment"
+        android:name="com.lucaszoka.taskmaster_v2.TaskDetailFragment"
+        android:label="fragment_task_detail"
+        tools:layout="@layout/fragment_task_detail" >
+        <action
+            android:id="@+id/action_taskDetailFragment_to_nav_task"
+            app:destination="@id/nav_task" />
+        <action
+            android:id="@+id/action_taskDetailFragment_to_taskUpdateFragment"
+            app:destination="@id/taskUpdateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.lucaszoka.taskmaster_v2.Calendar1KTFragment"
+        android:label="fragment_calendar1_k_t"
+        tools:layout="@layout/fragment_calendar1_k_t" />
+</navigation>

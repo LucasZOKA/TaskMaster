@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="iconsList">
+        <item>@drawable/baseline_exit_to_app_24</item>
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_reward</item>
+        <item>@drawable/ic_tree</item>
+    </array>
+
+</resources>

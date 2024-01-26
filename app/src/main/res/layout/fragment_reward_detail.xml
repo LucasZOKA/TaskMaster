@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RewardDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recompensa"
+            android:textSize="@dimen/_20ssp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/rewardImage"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"/>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descricao"
+            android:textSize="@dimen/_14ssp"
+            android:background="@color/background"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pontos"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/tv_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="@dimen/_14ssp"
+            android:background="@color/background"
+            android:padding="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grupo"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/tv_Group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grupo"
+            android:textSize="@dimen/_14ssp"
+            android:background="@color/background"
+            android:padding="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:id="@+id/tv_isPermanent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Permanente"
+            android:textSize="@dimen/_14ssp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <Button
+            android:id="@+id/btn_Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/_50sdp"/>
+
+    </LinearLayout>
+
+</FrameLayout>
